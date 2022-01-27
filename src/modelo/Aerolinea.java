@@ -33,4 +33,12 @@ public class Aerolinea {
         return vuelo;
         
     }
+    
+    public boolean ingresar(String nombre, String ruc){
+        boolean result = false;
+        if (this.nombre.equalsIgnoreCase(nombre) && this.ruc.equalsIgnoreCase(ruc)) {
+            result=true;
+        }
+        return result;
+    }
 }
