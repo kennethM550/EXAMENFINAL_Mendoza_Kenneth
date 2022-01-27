@@ -24,4 +24,9 @@ public class AeropuertoArreglo {
         Aeropuerto result = null;
         return result;
     }
+    
+    
+    public boolean isVacio() {
+        return this.indice==0;
+    }
 }

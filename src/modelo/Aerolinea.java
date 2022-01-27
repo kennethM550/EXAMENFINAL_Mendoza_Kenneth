@@ -18,7 +18,7 @@ public class Aerolinea {
     
     
     public Vuelo[] getVueloActivos(){
-        Vuelo activos[]= new Vuelo[];
+        Vuelo activos[]= null;
        
     }
     
