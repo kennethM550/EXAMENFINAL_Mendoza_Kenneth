@@ -1,14 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modelo;
 
-/**
- *
- * @author Kenneth
- */
 public class PasajeroArreglo {
+    private int indice;
+    private Pasajero arregloP[];
+    public PasajeroArreglo(int tamaño){
+        this.indice = 0;
+        this.arregloP=new Pasajero[tamaño];
+    }
     
+    public boolean agregar(Pasajero pasajero){
+        boolean result=false;
+        this.arregloP[this.indice]= pasajero;
+        this.indice++;
+        result = true;
+        return result;
+    }
+    
+    public boolean eliminar(Pasajero pasajero){
+        boolean result=false;
+        this.arregloP[this.indice]= pasajero;
+        this.indice--;
+        result = true;
+        return result;
+    }
+    
+    public Pasajero getpasajero(String tipoDoc, String nroDoc){
+        Pasajero result = null;
+        for (int i = 0; i < this.arregloP.length; i++) {
+            if (this.arregloP[i].getTipoDocumento().equals(tipoDoc)&&
+                this.arregloP[i].getNroDocumento().equals(nroDoc)) {
+                
+                result=this.arregloP[i];
+            }
+          }
+        return result;
+    }
 }
