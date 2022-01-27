@@ -9,7 +9,8 @@ public class Vuelo {
     private int puerta;
     private boolean activo;
     
-    private Aeropuerto aeropuerto;
+    private Aeropuerto aeropuertoLL;
+    private Aeropuerto aeropuertoS;
     private Asiento asientos;
 
     public Vuelo(String codigo, String fecha, String hora, int puerta, boolean activo) {
@@ -19,18 +20,22 @@ public class Vuelo {
         this.puerta = puerta;
         this.activo = activo;
         
-        this.aeropuerto = new Aeropuerto(hora, fecha, activo);
-        
+        this.aeropuertoLL = new Aeropuerto(hora, fecha, activo);
+        this.aeropuertoS = new Aeropuerto(hora, fecha, activo); 
     }
 
     
     
     public boolean venderAsiento(Pasajero p, int nroasiento, char fila){
+        boolean result=false;
         
+        return result;
     }
     
     public Asiento[] asientosDisponibles(){
+        Asiento asiento[]=null;
         
+        return asiento;
     }
     
     public boolean reservarAsiento(int nroAsiento, char fila){
@@ -54,15 +59,17 @@ public class Vuelo {
     }
     
     public String getAeropuetoSalida(){
-        
+        return 
     }
     
     public String getAeropuertoLlegada(){
         
     }
     
-    public Pasajeros[] getListaPasajeros(){
+    public Pasajero[] getListaPasajeros(){
+        Pasajero pasajero[]=null;
         
+        return pasajero;
     }
 }
 

@@ -14,20 +14,23 @@ public class Aerolinea {
         this.ruc = ruc;
         
     }
-    
-    
-    
+
     public Vuelo[] getVueloActivos(){
         Vuelo activos[]= null;
        
+        return activos;
     }
     
     public Pasajero[] getPasajerosPorVuelo(){
+        Pasajero pasajeros[]=null;
         
+        return pasajeros;
     }
     
     public Vuelo[] getVuelosPorCiudad(){
+        Vuelo vuelo[]=null;
         
+        return vuelo;
         
     }
 }
