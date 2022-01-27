@@ -6,6 +6,11 @@ public class Pais {
     private String codigo;
     private String nombre;
 
+    public Pais(String codigo, String nombre) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+    }
+    
     public String getCodigo() {
         return codigo;
     }
@@ -22,7 +27,10 @@ public class Pais {
         this.nombre = nombre;
     }
 
-    
+    public Ciudad getCiudades(String codPais){
+        Ciudad result=null;
+        return result;
+    }
     
     
 }

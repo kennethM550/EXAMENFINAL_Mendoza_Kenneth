@@ -4,6 +4,7 @@ package modelo;
 public class PasajeroArreglo {
     private int indice;
     private Pasajero arregloP[];
+    
     public PasajeroArreglo(int tamaño){
         this.indice = 0;
         this.arregloP=new Pasajero[tamaño];
@@ -19,7 +20,7 @@ public class PasajeroArreglo {
     
     public boolean eliminar(Pasajero pasajero){
         boolean result=false;
-        this.arregloP[this.indice]= pasajero;
+        this.arregloP[this.indice]= this.arregloP[this.indice+1];
         this.indice--;
         result = true;
         return result;
