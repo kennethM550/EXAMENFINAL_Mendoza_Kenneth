@@ -5,6 +5,8 @@ package modelo;
 public class Ciudad {
     private String codigo;
     private String nombre;
+    private Aeropuerto aeropuerto;
+    private int indiceC;
 
     public Ciudad(String codigo, String nombre) {
         this.codigo = codigo;
@@ -30,6 +32,6 @@ public class Ciudad {
     
     
     public Aeropuerto getAeropuertos(String codCiudad){
-        
+        return aeropuerto;
     }
 }
