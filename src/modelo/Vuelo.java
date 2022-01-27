@@ -47,7 +47,7 @@ public class Vuelo {
         
     }
     
-    gpublic Pasajeros[] getListaPasajeros(){
+    public Pasajeros[] getListaPasajeros(){
         
     }
 }
