@@ -27,9 +27,8 @@ public class Pais {
         this.nombre = nombre;
     }
 
-    public Ciudad getCiudades(String codPais){
-        Ciudad result=null;
-        return result;
+    public Ciudad[] getCiudades(String codPais){
+        
     }
     
     

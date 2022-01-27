@@ -16,9 +16,8 @@ public class AeropuertoArreglo {
         return result;
     }
     
-    public Aeropuerto getAeropuerto(Pais pais){
-        Aeropuerto result = null;
-        return result;
+    public Aeropuerto[] getAeropuerto(Pais pais){
+        
     }
     
     public Aeropuerto getAeropuerto(Ciudad ciudad){

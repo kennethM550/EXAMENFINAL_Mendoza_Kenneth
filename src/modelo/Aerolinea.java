@@ -7,15 +7,15 @@ public class Aerolinea {
     private String ruc;
     private Vuelo arregloV[];
     
-    public Vuelo getVueloActivos(){
+    public Vuelo[] getVueloActivos(){
         
     }
     
-    public Pasajero getPasajerosPorVuelo(){
+    public Pasajero[] getPasajerosPorVuelo(){
         
     }
     
-    public Vuelo getVuelosPorCiudad(){
+    public Vuelo[] getVuelosPorCiudad(){
         
     }
 }
