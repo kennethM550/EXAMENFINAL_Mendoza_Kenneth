@@ -5,7 +5,7 @@ package modelo;
 public class Pais {
     private String codigo;
     private String nombre;
-
+    private Ciudad ciudades[];
     public Pais(String codigo, String nombre) {
         this.codigo = codigo;
         this.nombre = nombre;

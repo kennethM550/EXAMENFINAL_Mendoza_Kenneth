@@ -8,6 +8,7 @@ public class Vuelo {
     private String hora;
     private int puerta;
     private boolean activo;
+    private Asiento asientos[];
 
     
     public boolean venderAsiento(Pasajero p, int nroasiento, char fila){
@@ -19,11 +20,15 @@ public class Vuelo {
     }
     
     public boolean reservarAsiento(int nroAsiento, char fila){
+         boolean result = false;
         
+        return result;
     }
     
     public boolean cancelarAsiento(int nroAsiento, char fila){
+         boolean result = false;
         
+        return result;
     }
     
     public String getCiudadSalida(){
